@@ -1,104 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Landing page with detailed integrations section</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="styles.css">
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  Sign In
-  Sign Up
+  <div class="intro">
+    <section id="header">
+      <img src="images/logo.svg" alt="logo">
+      <div id="nav">
+        <button>Sign In</button>
+        <button>Sign Up</button>
+      </div>
 
-  All your files in one secure location, accessible anywhere.
+    </section>
 
-  Fylo stores all your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
-  family and co-workers.
+    <section id="intro" class="section-padding">
+      <div>
+        <h1>All your files in one secure location, accessible anywhere.</h1>
+        <p>
+          Fylo stores all your most important files in one secure location.
+          Access them wherever you need, share and collaborate with friends,
+          family and co-workers.
+        </p>
+        <button>Get Started</button>
+      </div>
+      <div>
+        <img src="images/illustration-main.svg" alt="">
+      </div>
 
-  Get Started
+    </section>
+  </div>
 
-  Stay productive, wherever you are
 
-  Never let location be an issue when accessing your files. Fylo has you 
-  covered for all of your file storage needs.
+  <section id="product" class="section-padding">
 
-  All platforms, all devices, all your files
+    <div class="product-text">
+      <h3>Stay productive, wherever you are</h3>
 
-  Security you can trust
+      <p>Never let location be an issue when accessing your files. Fylo has you
+        covered for all of your file storage needs.</p>
+    </div>
 
-  Real-time collaboration
 
-  Connect with the apps you use everyday
 
-  Fylo seamlessly integrates with hundreds of apps, meaning you can access and 
-  work on your files from the apps you already know and love.
+    <div class="product-icon">
+      <div>
+        <img src="/images/icon-devices.svg" alt="">
+        <p>All platforms, all devices, all your files</p>
+      </div>
+      <div>
+        <img src="/images/icon-security.svg" alt="">
+        <p>Security you can trust</p>
+      </div>
+      <div>
+        <img src="/images/icon-collaboration.svg" alt="">
+        <p>Real-time collaboration</p>
+      </div>
+    </div>
 
-  Slack
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.
 
-  GSuite
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.
 
-  Trello
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.
 
-  Asana
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.
 
-  Salesforce
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.
 
-  Typeform
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.
 
-  Start using Fylo today
+  </section>
 
-  It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
-  questions, our support team would be happy to help you.
+  <section id="credit" class="section-padding">
 
-  Get Started
+    <div class="text">
+      <h2>
+        Connect with the apps you use everyday
+      </h2>
 
-  Receive updates from us, including tips and tricks on how to improve your workflow.
+      <p>
+        Fylo seamlessly integrates with hundreds of apps, meaning you can access and
+        work on your files from the apps you already know and love.
+      </p>
+    </div>
 
-  Join
+    <div class="credits">
 
-  Phone: +1-543-123-4567
+      <div class="card">
+        <div class="card-head">
+          <img src="/images/logo-slack.png" alt="">
+        </div>
 
-  example@fylo.com
+        <div class="card-body">
+          <h3>Slack</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.
+          </p>
+        </div>
+      </div>
 
-  Fylo
+      <div class="card">
+        <div class="card-head">
+          <img src="/images/logo-gsuite.png" alt="">
+        </div>
 
-  Desktop App
-  Mobile App
-  Pricing
-  Feature
+        <div class="card-body">
+          <h3>GSuite</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.
+          </p>
+        </div>
+      </div>
 
-  Company
+      <div class="card">
+        <div class="card-head">
+          <img src="/images/logo-trello.png" alt="">
+        </div>
 
-  About Us
-  Jobs
-  Press
-  Blog
+        <div class="card-body">
+          <h3>Trello</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.
+          </p>
+        </div>
+      </div>
 
-  Support
+      <div class="card">
+        <div class="card-head">
+          <img src="/images/logo-asana.png" alt="">
+        </div>
 
-  Contact Us
-  Terms
-  Privacy
+        <div class="card-body">
+          <h3>Asana</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.s
+          </p>
+        </div>
+      </div>
 
-  <footer>
+      <div class="card">
+        <div class="card-head">
+          <img src="/images/logo-salesforce.png" alt="">
+        </div>
+
+        <div class="card-body">
+          <h3>Salesforce</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <img src="/images/logo-typeform.png" alt="">
+        </div>
+
+        <div class="card-body">
+          <h3>Typeform</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id varius eros, vel pharetra est.
+          </p>
+        </div>
+      </div>
+
+
+
+  </section>
+
+  <section id="cta">
+
+    <div>
+      <h1>Start using Fylo today</h1>
+
+      <p>
+        It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+        questions, our support team would be happy to help you.
+      </p>
+
+      <button>
+        Get Started
+      </button>
+    </div>
+
+
+  </section>
+
+
+  <footer class="section-padding">
+    <img src="images/logo-white.svg" alt="">
+
+
+    <div class="footer-link">
+      <div>
+        <p>
+          Receive updates from us, including tips and tricks on how to improve your workflow.
+        </p>
+
+        <form action="">
+          <input type="text" name="" id="">
+          <button type="submit">Join</button>
+        </form>
+
+        <p>
+          Phone: +1-543-123-4567
+        </p>
+
+        <p>
+          example@fylo.com
+        </p>
+      </div>
+
+      <div>
+        <h4>Fylo</h4>
+        <p>Desktop App</p>
+        <p>Mobile App </p>
+        <p>Pricing</p>
+        <p>Feature</p>
+      </div>
+
+      <div>
+        <h4>
+          Company
+        </h4>
+        <p>About Us</p>
+        <p>Jobs</p>
+        <p>Press</p>
+        <p>Blog</p>
+      </div>
+
+      <div>
+        <h4>
+          Support
+        </h4>
+        <p>Contact Us</p>
+        <p>Terms</p>
+        <p>Privacy</p>
+      </div>
+    </div>
+
+
+
     <p class="attribution">
-      This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 🎉
+      This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank">Frontend Mentor</a> 🎉
     </p>
   </footer>
 </body>
+
 </html>

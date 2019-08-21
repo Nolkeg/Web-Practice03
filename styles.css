@@ -1,0 +1,282 @@
+*{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer{
+    background-color: hsl(243, 87%, 12%);
+    color: white;
+}
+
+button{
+    background-color: hsl(163, 95%, 43%);
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 5px;
+}
+
+#header{
+    padding: 50px 5%;
+}
+
+.section-padding{
+    padding: 75px 5%;
+}
+
+.intro{
+    background-image: url("/images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#intro div{
+    max-width: 50%;
+}
+
+#intro div:first-child{
+    width: 30%;
+    min-width: 300px;
+}
+#intro img{
+    height: 100%;
+}
+
+#product{
+    text-align: center;
+}
+.product-text p{
+    display: inline-block;
+    width: 40%;
+    margin: auto;
+}
+.product-icon{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+.product-icon div{
+    width: 250px;
+    margin: auto;
+}
+.product-icon img{
+    margin: 16px;
+    height: 150px;
+}
+.product-icon p{
+    position: relative;
+    margin : 0px 0px 16px 0px;
+}
+
+#credit{
+    display: flex;
+    justify-content: space-between;
+    grid-template-areas: c-text credit;
+    
+}
+
+#credit .text{
+    grid-area: x-text;
+    align-self: center;
+    width: 40%;
+    min-width: 350px;
+    padding: 24px;
+}
+
+#credit .credits{
+    grid-area: credit;
+    width: 70%;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    position: relative;
+}
+
+
+.credits .card{
+    width: 30%;
+    min-width: 200px;
+    text-align: center;
+    margin : 8px 8px 8px 0px;
+}
+
+.card:nth-child(2), .card:nth-child(5){
+    position: relative;
+    top: -50px
+}
+
+
+.card-head{
+    overflow: hidden;
+    padding: 24px 16px;
+    box-shadow: 0px 0px 3px hsl(0, 0%, 80%);
+    height: 100px;
+    display: flex;
+}
+
+.card-body{
+    padding: 16px;
+    height: 200px;
+    box-shadow: 0px 3px 3px hsl(0, 0%, 80%);
+}
+
+.credits img{
+    width: 100%;
+    object-fit: contain;
+}
+.credits p, .credits h3{
+    margin: 8px 0px 0px 0px;
+}
+
+#cta{
+    text-align: center;
+    padding-bottom: 75px;
+}
+
+#cta div{
+    width: 50%;
+    min-width: 350px;
+    margin: auto;
+}
+
+.footer-link{
+    display: grid;
+    grid-template-columns: minmax(350px,40%) auto auto auto;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+
+.footer-link form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-link input{
+    border-radius: 5px;
+    margin-right: 8px;
+    padding: 10px 24px;
+    width: 100%;
+}
+
+.footer-link button{
+    min-width: 30%;
+}
+
+
+.footer-link h4{
+    margin: 16px 0px;
+}
+
+.footer-link div{
+    margin: 0px 16px;
+}
+
+@media(max-width:1000px)
+{
+    body{
+        text-align: center;
+    }
+
+    .intro{
+        background-image: url("/images/bg-intro-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top right;
+    }
+
+    #intro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #intro div:nth-child(2){
+        min-width: 350px;
+    }
+
+    #intro div{
+        max-width: 80%;
+    }
+
+    #intro img{
+        width: 100%;
+    }
+
+    #credit{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #credit .credits{
+        grid-template-columns: auto auto;
+    }
+
+    .card:nth-child(2), .card:nth-child(5){
+        position: relative;
+        top: 0px;
+    }
+
+    footer{
+        text-align: left;
+    }
+}
+
+@media(max-width:725px)
+{
+    #credit .credits{
+        grid-template-columns: auto;
+    }
+
+    .footer-link{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-between;
+        padding-top: 24px;
+    }
+
+    .footer-link form{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    .footer-link input{
+        margin-right: 0px;
+    }
+    
+    .footer-link button{
+        margin-top: 8px;
+        min-width: 30%;
+    }
+    
+
+}

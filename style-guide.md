@@ -21,7 +21,7 @@ The designs were created to the following widths:
 ### Neutral
 
 - Light Gray: hsl(106, 0%, 98%)
-- Gray: hsl(0, 0%, 50%)
+- Gray: 
 - Dark Gray: hsl(0, 0%, 17%)
 
 ## Typography
