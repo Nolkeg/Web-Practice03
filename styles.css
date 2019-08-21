@@ -11,6 +11,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     margin: 0px;
     padding: 0px;
+    min-width: 375px;
 }
 
 footer{
@@ -35,7 +36,7 @@ button{
 }
 
 .intro{
-    background-image: url("/images/bg-intro-desktop.svg");
+    background-image: url("images/bg-intro-desktop.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top right;
@@ -183,7 +184,8 @@ button{
     border-radius: 5px;
     margin-right: 8px;
     padding: 10px 24px;
-    width: 100%;
+    width: 65%;
+    border: none;
 }
 
 .footer-link button{
@@ -206,7 +208,7 @@ button{
     }
 
     .intro{
-        background-image: url("/images/bg-intro-mobile.svg");
+        background-image: url("images/bg-intro-mobile.svg");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: top right;
@@ -248,6 +250,16 @@ button{
     footer{
         text-align: left;
     }
+
+    .footer-link input{
+        margin-right: 0%;
+        width: 100%;
+    }
+    
+    .footer-link button{
+        margin-top: 16px;
+        width: 100%;
+    }
 }
 
 @media(max-width:725px)
@@ -275,7 +287,7 @@ button{
     
     .footer-link button{
         margin-top: 8px;
-        min-width: 30%;
+        width: 30%;
     }
     
 
